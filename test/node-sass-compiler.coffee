@@ -15,7 +15,10 @@ describe 'NodeSassCompiler', ->
         done()
 
     it 'should compile and compressed', (done) ->
-      compiler = new NodeSassCompiler outputStyle: 'compressed'
+      compiler = new NodeSassCompiler
+        plugins:
+          sass:
+            outputStyle: 'compressed'
       params =
         data: '.test {\n  border-color: #fff; }\n'
 

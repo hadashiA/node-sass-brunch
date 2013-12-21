@@ -6,12 +6,13 @@ module.exports = class NodeSassCompiler
   extension: 'sass'
   pattern: /s[ac]ss$/
 
-  constructor: (@config) ->
+  constructor: (config) ->
+    @nodeSassConfig = config?.plugins?.sass or {}
 
   compile: (params, callback) ->
     sass.render
-      outputStyle: @config?.outputStyle
-      includePaths: @config?.includePaths
+      outputStyle: @nodeSassConfig.outputStyle
+      includePaths: @nodeSassConfig.includePaths
       data: params.data
       error: callback
       success: (css) ->
