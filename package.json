@@ -1,0 +1,32 @@
+{
+  "name": "node-sass-brunch",
+  "version": "0.0.1",
+  "description": "Adds Sass support to brunch. Using node-sass.",
+  "main": "index.js",
+  "scripts": {
+    "test": "NODE_ENV=test ./node_modules/.bin/mocha --compilers coffee:coffee-script test/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/f-kubotar/node-sass-brunch"
+  },
+  "keywords": [
+    "brunchplugin",
+    "sass",
+    "node-sass"
+  ],
+  "author": "f-kubotar (hadashiA)",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/f-kubotar/node-sass-brunch/issues"
+  },
+  "homepage": "https://github.com/f-kubotar/node-sass-brunch",
+  "dependencies": {
+    "node-sass": "~0.7.0",
+    "coffee-script": "~1.6.3"
+  },
+  "devDependencies": {
+    "mocha": "~1.16.1",
+    "chai": "~1.8.1"
+  }
+}
