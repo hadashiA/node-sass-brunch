@@ -4,7 +4,7 @@ module.exports = class NodeSassCompiler
   brunchPlugin: yes
   type: 'stylesheet'
   extension: 'sass'
-  pattern: /\s[ac]ss$/
+  pattern: /s[ac]ss$/
 
   constructor: (@config) ->
 
