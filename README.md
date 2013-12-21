@@ -1,5 +1,7 @@
 # node-sass-brunch
 
+[![Build Status](https://travis-ci.org/f-kubotar/node-sass-brunch.png?branch=master)](https://travis-ci.org/f-kubotar/node-sass-brunch)
+
 Adds [node-sass](https://github.com/andrew/node-sass) support to [brunch](http://brunch.io).
 
 
