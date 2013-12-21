@@ -11,6 +11,7 @@ module.exports = class NodeSassCompiler
   compile: (params, callback) ->
     sass.render
       outputStyle: @config?.outputStyle
+      includePaths: @config?.includePaths
       data: params.data
       error: callback
       success: (css) ->

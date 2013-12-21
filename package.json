@@ -2,7 +2,7 @@
   "name": "node-sass-brunch",
   "version": "0.0.1",
   "description": "Adds Sass support to brunch. Using node-sass.",
-  "main": "index.js",
+  "main": "./lib/index.js",
   "scripts": {
     "prepublish": "rm -rf lib && coffee --bare --output lib/ src/",
     "test": "NODE_ENV=test ./node_modules/.bin/mocha --compilers coffee:coffee-script test/"
